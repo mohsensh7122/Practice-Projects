@@ -2,8 +2,18 @@
   Keyframes
 --------------------------- */
 
+@keyframes offset {
+	100% {
+		stroke-dashoffset: 0;
+		
+	}
+}
 
-
+@keyframes fill-it {
+	100% {
+		fill: #6dafbc;
+	}
+}
 /* --------------------------
   SVG Styles
 --------------------------- */
@@ -14,3 +24,11 @@ svg {
 	width: 40%;
 }
 
+
+.logo {
+	stroke: #6dafbc;
+	stroke-width: 2;
+	stroke-dasharray: 810;
+	stroke-dashoffset: 810;
+	animation: offset 3.5s linear forwards, fill-it 1s 3.5s forwards; 
+}
